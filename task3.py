@@ -6,3 +6,21 @@
 # - x=34; y=-30 -> 4
 # - x=2; y=4-> 1
 # - x=-34; y=-30 -> 3
+
+x = int(input())
+y = int(input())
+
+if x > 0 and y > 0:
+    print (f"x = {x}; y = {y} -> 1")
+elif x < 0 and y > 0:
+    print (f"x = {x}; y = {y} -> 2")
+elif x < 0 and y < 0:
+    print (f"x = {x}; y = {y} -> 3")
+elif x > 0 and y < 0:
+    print (f"x = {x}; y = {y} -> 4")
+elif x == 0 and y > 0 or y < 0:
+    print (f"x = {x}; y = {y} -> точка лежит на оси Y")
+elif y == 0 and x > 0 or x < 0:
+    print (f"x = {x}; y = {y} -> точка лежит на оси X")
+else:
+    print (f"x = {x}; y = {y} -> точка лежит в начале координат")
